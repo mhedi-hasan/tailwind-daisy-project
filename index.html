@@ -11,15 +11,51 @@
     <!-- tailwind-and-daisy-ui-link -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind-custom-color -->
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                clifford: '#da373d',
+            }
+            }
+        }
+        }
+    </script>
     <style>
         .manrope-font{
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body class="manrope-font">
+    <!-- header-section-start -->
+    <header class="mx-20">
+        <!-- banner-section-start -->
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="/images//banner.png" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+                <h1 class="text-7xl leading-tight font-extrabold">
+                    It's good <br>
+                    tea time at The <br> 
+                    Tea House</h1>
+                <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-primary text-lg font-bold">Explore More</button>
+            </div>
+            </div>
+        </div>
+        <!-- banner-section-end -->
+    </header>
+        <!-- header-section-end -->
+        <!-- main-section-start -->
+    <main class="mx-20">
+
+    </main>
+        <!-- main-section-end -->
+        <!-- footer-section-start -->
     <footer></footer>
+        <!-- main-section-end -->
 </body>
 </html>
